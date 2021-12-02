@@ -2,6 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npm run lint:fix
+
 git add .
-npm --prefix ./src/models version patch
-npm --prefix ./src/models publish
