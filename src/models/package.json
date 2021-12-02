@@ -1,0 +1,15 @@
+{
+  "name": "alersh_models",
+  "version": "1.0.0",
+  "description": "Models for CV project",
+  "main": "typings/index.js",
+  "types": "typings/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^2.7.2"
+  },
+  "author": "alersh",
+  "license": "ISC"
+}
