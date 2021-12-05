@@ -7,6 +7,7 @@ declare global {
       CHAT_ID: string;
       PORT?: string;
       PWD: string;
+      ALLOW_LIST: string;
     }
   }
 }

@@ -13,8 +13,13 @@ dotenv.config();
 const PORT = process.env.PORT || 3010;
 const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN });
 
+const allowList = process.env.ALLOW_LIST.split(' ');
+const corsOptionsDelegate = (req, callback) => {
+  callback(null, { origin: allowList.includes(req.headers.origin) });
+};
+
 const server = express();
-server.use(cors());
+server.use(cors(corsOptionsDelegate));
 server.use(bodyParser.json());
 
 server.get('/', async (req, resp) => {
