@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "sourceMap": false,
+    "outDir": "typings",
+    "rootDir": ".",
+    "declaration": true,
+    "strict": true
+  },
+  "exclude": [
+    "node_modules",
+    "typings"
+  ]
+}
